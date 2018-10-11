@@ -9,8 +9,8 @@
         </form>
         <?php
         $num=$_POST['numero'];
-        for($i=0;$i<500000;$i++){
-            $aleatori= rand(0,500000);
+        for($i=0;$i<1000000;$i++){
+            $aleatori= rand(0,1000000);
             if($aleatori==$num){
                 list($useg, $seg) = explode(" ", microtime());
             echo ((float)$useg + (float)$seg."milisegons");
