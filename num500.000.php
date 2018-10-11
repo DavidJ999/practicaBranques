@@ -11,7 +11,7 @@
         $num=$_POST['numero'];
         for($i=0;$i<700000;$i++){
             $aleatori= rand(0,700000);
-            if($aleatori==$num){
+            if($aleatori==$num && $aleatori%2==0){
                 list($useg, $seg) = explode(" ", microtime());
             echo ((float)$useg + (float)$seg."milisegons");
                 exit;
